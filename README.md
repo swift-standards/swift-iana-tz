@@ -1,0 +1,24 @@
+# swift-iana-tz
+
+Use this package when you need the time in a named zone such as Europe/Amsterdam or America/New_York, exactly and on every platform, without Foundation: which calendar day it is there now, which instant a local time stands for, and which offset, abbreviation and daylight saving state a zone had at any instant in its history. Start from `TZ.Zone`, written as a path (`.europe.amsterdam`) or parsed from its name (`try TZ.Zone("Europe/Amsterdam")`), and pass it to swift-calendar-gregorian: `Gregorian.Date.today(in: .europe.amsterdam, at: clock.now)`, `local.instant(in: .america.newYork)` and `instant.gregorian(in: .asia.kolkata)`. For a fixed offset with no name, use `Time.Zone` from swift-time instead.
+
+```swift
+let today = try Gregorian.Date.today(in: .europe.amsterdam, at: clock.now)
+let opening = try Gregorian.DateTime(year: 2026, month: .november, day: 10, hour: 9, minute: 30)
+let instant = try opening.instant(in: .america.newYork)
+let summer = TZ.Zone.europe.amsterdam.observance(at: instant)   // +01:00, "CET", not daylight saving
+```
+
+## Data
+
+The zones, links and rules are the IANA Time Zone Database release 2026f (<https://data.iana.org/time-zones/releases/tzdata2026f.tar.gz>), `TZ.version`. The generated Swift under `Sources/IANA TZ/Generated/` comes from the release's source files `africa`, `antarctica`, `asia`, `australasia`, `europe`, `northamerica`, `southamerica`, `etcetera`, `factory` and `backward`, in their main (not rearguard or vanguard) form, and without `backzone`, as `make install` builds them. A small compiler written for this package reads the Zone, Rule and Link lines with the semantics of the reference compiler `zic`: it computes each zone's transitions, merges those that change nothing, and writes the POSIX TZ-string rule (`TZ.Recurrence`) for the time after the last one. Transitions are kept up to the end of the last year that any explicit rule or zone line names, so the recurrence alone covers what follows. The output was checked against the 2026f files that `zic` compiled for macOS 27.2: every zone has the same offsets, abbreviations and transitions through 2037 and the same POSIX rule, except that macOS builds the rearguard form, so Europe/Dublin, Europe/Prague, Africa/Windhoek, Africa/Casablanca and Africa/El_Aaiun differ there in daylight saving flags only. To move to a new release, run the compiler on its files and replace `Generated/`.
+
+## Laws
+
+- Every zone (345) and link (253) of release 2026f is present. `TZ.Zone(_:)` accepts exactly these names, spelled as tzdata spells them, and throws `TZ.Zone.Error.unknown` for any other text: matching is case-sensitive.
+- A link is not a zone of its own: it resolves to the zone it names, so `TZ.Zone("Europe/Amsterdam") == .europe.brussels` and its `name` is `Europe/Brussels`. Since 2022 tzdata keeps Amsterdam's history before 1970 only in `backzone`, which this package leaves out.
+- Every name has a path. Each `/` is a step, and a name becomes lower camel case, with `+` as `Plus` and `-` before a digit as `Minus`: `America/Argentina/Buenos_Aires` is `.america.argentina.buenosAires`, `Etc/GMT+5` is `.etc.gmtPlus5` (five hours behind UTC, as POSIX signs it), `US/Eastern` is `.us.eastern`.
+- `TZ.Zone.observance(at:)` gives the offset, abbreviation and daylight saving state in force at an instant. Before the first transition it is the zone's initial observance, usually local mean time. A transition takes effect at its instant. At and after the last transition the zone's `TZ.Recurrence` decides, which is RFC 8536's rule for a TZif footer, and it agrees with the last transition at that instant.
+- Daylight saving is tzdata's main form: an observance saves daylight when its rule's SAVE is not zero, so Irish Standard Time in summer is standard and Dublin's winter GMT, an hour back, is daylight saving. The same holds for Casablanca in Ramadan and for Namibia and Czechoslovakia in the years they used negative saving.
+- A `TZ.Recurrence` without `daylight` keeps its standard observance for ever. With `daylight`, each year changes to daylight saving at `start` and back at `end`. A rule names a month, a week (first to fourth, or last) and a weekday, as POSIX's `Mm.w.d` does, and a time counted from that day's local midnight in the observance that is ending, which may be negative or exceed a day. Every recurrence in 2026f has this form; POSIX's Julian day forms are not represented.
+- `TZ.Zone.rule` is a `Time.Zone.Rule`, and swift-calendar-gregorian converts with it by that package's laws: `Gregorian.Date.today(in:at:)` and `Time.Instant.gregorian(in:)` read the offset at the instant, a local time that occurs twice resolves to the earlier instant, a skipped local time resolves to the later one, and a day the zone skips, such as 30 December 2011 in Samoa, has no instants.

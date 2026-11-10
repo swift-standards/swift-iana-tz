@@ -1,0 +1,1913 @@
+internal import Calendar_Gregorian
+internal import Time
+
+extension TZ.Zone.Record {
+    static let asiaAlmaty = TZ.Zone.Record(
+        name: "Asia/Almaty",
+        observances: [
+            .init(offset: .seconds(18468), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+        ],
+        instants: [
+            -1441170468, -1247547600, 354909600, 370717200, 386445600, 402253200, 417981600, 433789200,
+            449604000, 465336000, 481060800, 496785600, 512510400, 528235200, 543960000, 559684800,
+            575409600, 591134400, 606859200, 622584000, 638308800, 654638400, 670363200, 686091600,
+            695768400, 701812800, 717537600, 733262400, 748987200, 764712000, 780436800, 796161600,
+            811886400, 828216000, 846360000, 859665600, 877809600, 891115200, 909259200, 922564800,
+            941313600, 954014400, 972763200, 985464000, 1004212800, 1017518400, 1035662400, 1048968000,
+            1067112000, 1080417600, 1099166400, 1709229600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaAmman = TZ.Zone.Record(
+        name: "Asia/Amman",
+        observances: [
+            .init(offset: .seconds(8624), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+        ],
+        instants: [
+            -1230776624, 108165600, 118270800, 136591200, 149806800, 168127200, 181342800, 199749600,
+            215643600, 231285600, 244501200, 262735200, 275950800, 481154400, 496962000, 512949600,
+            528670800, 544399200, 560120400, 575848800, 592174800, 610581600, 623624400, 641167200,
+            655074000, 671839200, 685918800, 702856800, 717973200, 733701600, 749422800, 765151200,
+            779662800, 797205600, 811116000, 828655200, 843170400, 860104800, 874620000, 891554400,
+            906069600, 930780000, 938124000, 954367200, 970178400, 985816800, 1001628000, 1017352800,
+            1033077600, 1048802400, 1066946400, 1080252000, 1097791200, 1112306400, 1128031200, 1143756000,
+            1161900000, 1175205600, 1193349600, 1206655200, 1225404000, 1238104800, 1256853600, 1269554400,
+            1288303200, 1301608800, 1319752800, 1333058400, 1387486800, 1395957600, 1414706400, 1427407200,
+            1446156000, 1459461600, 1477605600, 1490911200, 1509055200, 1522360800, 1540504800, 1553810400,
+            1571954400, 1585260000, 1604008800, 1616709600, 1635458400, 1645740000, 1666908000,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"), daylight: nil)
+    )
+
+    static let asiaAnadyr = TZ.Zone.Record(
+        name: "Asia/Anadyr",
+        observances: [
+            .init(offset: .seconds(42596), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"),
+            .init(offset: .seconds(50400), isDaylightSaving: true, abbreviation: "+14"),
+            .init(offset: .seconds(46800), isDaylightSaving: false, abbreviation: "+13"),
+            .init(offset: .seconds(46800), isDaylightSaving: true, abbreviation: "+13"),
+            .init(offset: .seconds(43200), isDaylightSaving: true, abbreviation: "+12"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+        ],
+        instants: [
+            -1441194596, -1247572800, 354884400, 370692000, 386420400, 402231600, 417960000, 433767600,
+            449582400, 465314400, 481039200, 496764000, 512488800, 528213600, 543938400, 559663200,
+            575388000, 591112800, 606837600, 622562400, 638287200, 654616800, 670341600, 686070000,
+            695746800, 701791200, 717516000, 733240800, 748965600, 764690400, 780415200, 796140000,
+            811864800, 828194400, 846338400, 859644000, 877788000, 891093600, 909237600, 922543200,
+            941292000, 953992800, 972741600, 985442400, 1004191200, 1017496800, 1035640800, 1048946400,
+            1067090400, 1080396000, 1099144800, 1111845600, 1130594400, 1143295200, 1162044000, 1174744800,
+            1193493600, 1206799200, 1224943200, 1238248800, 1256392800, 1269698400, 1288450800, 1301151600,
+        ],
+        types: [
+            1, 3, 2, 3, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 5, 6,
+            1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4,
+            1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 5, 6, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"), daylight: nil)
+    )
+
+    static let asiaAqtau = TZ.Zone.Record(
+        name: "Asia/Aqtau",
+        observances: [
+            .init(offset: .seconds(12064), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+        ],
+        instants: [
+            -1441164064, -1247544000, 370724400, 386445600, 402256800, 417985200, 433792800, 449607600,
+            465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400, 575413200,
+            591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686095200, 695772000,
+            701816400, 717541200, 733266000, 748990800, 764715600, 780440400, 796168800, 811893600,
+            828223200, 846367200, 859672800, 877816800, 891122400, 909266400, 922572000, 941320800,
+            954021600, 972770400, 985471200, 1004220000, 1017525600, 1035669600, 1048975200, 1067119200,
+            1080424800, 1099173600,
+        ],
+        types: [
+            1, 2, 3, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 5, 1, 2,
+            4, 2, 4, 2, 4, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1,
+            5, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaAqtobe = TZ.Zone.Record(
+        name: "Asia/Aqtobe",
+        observances: [
+            .init(offset: .seconds(13720), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+        ],
+        instants: [
+            -1441165720, -1247544000, 354913200, 370720800, 386445600, 402256800, 417985200, 433792800,
+            449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400,
+            575413200, 591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686095200,
+            695772000, 701816400, 717541200, 733266000, 748990800, 764715600, 780440400, 796165200,
+            811890000, 828219600, 846363600, 859669200, 877813200, 891118800, 909262800, 922568400,
+            941317200, 954018000, 972766800, 985467600, 1004216400, 1017522000, 1035666000, 1048971600,
+            1067115600, 1080421200, 1099170000,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 5, 1,
+            2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaAshgabat = TZ.Zone.Record(
+        name: "Asia/Ashgabat",
+        observances: [
+            .init(offset: .seconds(14012), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+        ],
+        instants: [
+            -1441166012, -1247544000, 354913200, 370720800, 386449200, 402256800, 417985200, 433792800,
+            449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400,
+            575413200, 591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686095200,
+            695772000,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaAtyrau = TZ.Zone.Record(
+        name: "Asia/Atyrau",
+        observances: [
+            .init(offset: .seconds(12464), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+        ],
+        instants: [
+            -1441164464, -1247540400, 370724400, 386445600, 402256800, 417985200, 433792800, 449607600,
+            465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400, 575413200,
+            591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686095200, 695772000,
+            701816400, 717541200, 733266000, 748990800, 764715600, 780440400, 796165200, 811890000,
+            828219600, 846363600, 859669200, 877813200, 891118800, 909262800, 922568400, 941320800,
+            954021600, 972770400, 985471200, 1004220000, 1017525600, 1035669600, 1048975200, 1067119200,
+            1080424800, 1099173600,
+        ],
+        types: [
+            1, 2, 3, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 5, 6, 2,
+            4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6,
+            5, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaBaghdad = TZ.Zone.Record(
+        name: "Asia/Baghdad",
+        observances: [
+            .init(offset: .seconds(10660), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10656), isDaylightSaving: false, abbreviation: "BMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+            .init(offset: .seconds(14400), isDaylightSaving: true, abbreviation: "+04"),
+        ],
+        instants: [
+            -2524532260, -1641005856, 389048400, 402264000, 417906000, 433800000, 449614800, 465422400,
+            481150800, 496792800, 512517600, 528242400, 543967200, 559692000, 575416800, 591141600,
+            606866400, 622591200, 638316000, 654645600, 670464000, 686275200, 702086400, 717897600,
+            733622400, 749433600, 765158400, 780969600, 796694400, 812505600, 828316800, 844128000,
+            859852800, 875664000, 891388800, 907200000, 922924800, 938736000, 954547200, 970358400,
+            986083200, 1001894400, 1017619200, 1033430400, 1049155200, 1064966400, 1080777600, 1096588800,
+            1112313600, 1128124800, 1143849600, 1159660800, 1175385600, 1191196800,
+        ],
+        types: [
+            1, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"), daylight: nil)
+    )
+
+    static let asiaBaku = TZ.Zone.Record(
+        name: "Asia/Baku",
+        observances: [
+            .init(offset: .seconds(11964), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(14400), isDaylightSaving: true, abbreviation: "+04"),
+        ],
+        instants: [
+            -1441163964, -405140400, 354916800, 370724400, 386452800, 402260400, 417988800, 433796400,
+            449611200, 465343200, 481068000, 496792800, 512517600, 528242400, 543967200, 559692000,
+            575416800, 591141600, 606866400, 622591200, 638316000, 654645600, 670370400, 686098800,
+            701823600, 717548400, 828234000, 846378000, 859680000, 877824000, 891129600, 909273600,
+            922579200, 941328000, 954028800, 972777600, 985478400, 1004227200, 1017532800, 1035676800,
+            1048982400, 1067126400, 1080432000, 1099180800, 1111881600, 1130630400, 1143331200, 1162080000,
+            1174780800, 1193529600, 1206835200, 1224979200, 1238284800, 1256428800, 1269734400, 1288483200,
+            1301184000, 1319932800, 1332633600, 1351382400, 1364688000, 1382832000, 1396137600, 1414281600,
+            1427587200, 1445731200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"), daylight: nil)
+    )
+
+    static let asiaBangkok = TZ.Zone.Record(
+        name: "Asia/Bangkok",
+        observances: [
+            .init(offset: .seconds(24124), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(24124), isDaylightSaving: false, abbreviation: "BMT"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+        ],
+        instants: [
+            -2840164924, -1570084924,
+        ],
+        types: [
+            1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaBarnaul = TZ.Zone.Record(
+        name: "Asia/Barnaul",
+        observances: [
+            .init(offset: .seconds(20100), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+        ],
+        instants: [
+            -1579844100, -1247551200, 354906000, 370713600, 386442000, 402249600, 417978000, 433785600,
+            449600400, 465332400, 481057200, 496782000, 512506800, 528231600, 543956400, 559681200,
+            575406000, 591130800, 606855600, 622580400, 638305200, 654634800, 670359600, 686088000,
+            695764800, 701809200, 717534000, 733258800, 748983600, 764708400, 780433200, 796158000,
+            801590400, 811886400, 828216000, 846360000, 859665600, 877809600, 891115200, 909259200,
+            922564800, 941313600, 954014400, 972763200, 985464000, 1004212800, 1017518400, 1035662400,
+            1048968000, 1067112000, 1080417600, 1099166400, 1111867200, 1130616000, 1143316800, 1162065600,
+            1174766400, 1193515200, 1206820800, 1224964800, 1238270400, 1256414400, 1269720000, 1288468800,
+            1301169600, 1414263600, 1459022400,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+            4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 3, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaBeirut = TZ.Zone.Record(
+        name: "Asia/Beirut",
+        observances: [
+            .init(offset: .seconds(8520), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+        ],
+        instants: [
+            -2840149320, -1570413600, -1552186800, -1538359200, -1522551600, -1507514400, -1490583600, -1473645600,
+            -1460948400, -399866400, -386650800, -368330400, -355114800, -336794400, -323578800, -305172000,
+            -291956400, -273636000, -260420400, 78012000, 86734800, 105055200, 118270800, 136591200,
+            149806800, 168127200, 181342800, 199749600, 212965200, 231285600, 244501200, 262735200,
+            275950800, 452210400, 466722000, 483746400, 498258000, 515282400, 529794000, 546818400,
+            561330000, 581119200, 592952400, 610754400, 624488400, 641512800, 656024400, 673048800,
+            687560400, 704671200, 718146000, 733269600, 748990800, 764719200, 780440400, 796168800,
+            811890000, 828223200, 843944400, 859672800, 875394000, 891122400, 906843600, 922572000,
+            941317200, 954021600, 972766800,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+        ],
+        recurrence: .init(
+            standard: .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            daylight: .init(
+                observance: .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+                start: .init(month: .march, week: .last, weekday: .sunday, time: .seconds(0)),
+                end: .init(month: .october, week: .last, weekday: .sunday, time: .seconds(0))
+            )
+        )
+    )
+
+    static let asiaBishkek = TZ.Zone.Record(
+        name: "Asia/Bishkek",
+        observances: [
+            .init(offset: .seconds(17904), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+        ],
+        instants: [
+            -1441169904, -1247547600, 354909600, 370717200, 386445600, 402253200, 417981600, 433789200,
+            449604000, 465336000, 481060800, 496785600, 512510400, 528235200, 543960000, 559684800,
+            575409600, 591134400, 606859200, 622584000, 638308800, 654638400, 670363200, 683582400,
+            703018800, 717530400, 734468400, 748980000, 765918000, 780429600, 797367600, 811879200,
+            828817200, 843933600, 859671000, 877811400, 891120600, 909261000, 922570200, 941315400,
+            954019800, 972765000, 985469400, 1004214600, 1017523800, 1035664200, 1048973400, 1067113800,
+            1080423000, 1099168200, 1111872600, 1123783200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+            4, 1, 4, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"), daylight: nil)
+    )
+
+    static let asiaChita = TZ.Zone.Record(
+        name: "Asia/Chita",
+        observances: [
+            .init(offset: .seconds(27232), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "+10"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "+09"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+        ],
+        instants: [
+            -1579419232, -1247558400, 354898800, 370706400, 386434800, 402242400, 417970800, 433778400,
+            449593200, 465325200, 481050000, 496774800, 512499600, 528224400, 543949200, 559674000,
+            575398800, 591123600, 606848400, 622573200, 638298000, 654627600, 670352400, 686080800,
+            695757600, 701802000, 717526800, 733251600, 748976400, 764701200, 780426000, 796150800,
+            811875600, 828205200, 846349200, 859654800, 877798800, 891104400, 909248400, 922554000,
+            941302800, 954003600, 972752400, 985453200, 1004202000, 1017507600, 1035651600, 1048957200,
+            1067101200, 1080406800, 1099155600, 1111856400, 1130605200, 1143306000, 1162054800, 1174755600,
+            1193504400, 1206810000, 1224954000, 1238259600, 1256403600, 1269709200, 1288458000, 1301158800,
+            1414252800, 1459015200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"), daylight: nil)
+    )
+
+    static let asiaColombo = TZ.Zone.Record(
+        name: "Asia/Colombo",
+        observances: [
+            .init(offset: .seconds(19164), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(19172), isDaylightSaving: false, abbreviation: "MMT"),
+            .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "+0530"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(23400), isDaylightSaving: true, abbreviation: "+0630"),
+            .init(offset: .seconds(23400), isDaylightSaving: false, abbreviation: "+0630"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+        ],
+        instants: [
+            -2840159964, -2019705572, -883287000, -862639200, -764051400, 832962600, 846266400, 1145039400,
+        ],
+        types: [
+            1, 2, 3, 4, 2, 5, 6, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "+0530"), daylight: nil)
+    )
+
+    static let asiaDamascus = TZ.Zone.Record(
+        name: "Asia/Damascus",
+        observances: [
+            .init(offset: .seconds(8712), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+        ],
+        instants: [
+            -1577931912, -1568592000, -1554080400, -1537142400, -1522630800, -1505692800, -1491181200, -1474243200,
+            -1459126800, -242265600, -228877200, -210556800, -197427600, -178934400, -165718800, -147398400,
+            -134269200, -116467200, -102646800, -84326400, -71110800, -52704000, -39488400, -21168000,
+            -7952400, 10368000, 23583600, 41904000, 55119600, 73526400, 86742000, 105062400,
+            118278000, 136598400, 149814000, 168134400, 181350000, 199756800, 212972400, 231292800,
+            241916400, 262828800, 273452400, 418694400, 433810800, 450316800, 465433200, 508896000,
+            529196400, 541555200, 562633200, 574387200, 594255600, 607305600, 623199600, 638928000,
+            654649200, 670456800, 686264400, 702684000, 717886800, 733096800, 748904400, 765151200,
+            780958800, 796687200, 812494800, 828309600, 844117200, 859759200, 875653200, 891208800,
+            907189200, 922917600, 938725200, 954540000, 970347600, 986076000, 1001883600, 1017612000,
+            1033419600, 1049148000, 1064955600, 1080770400, 1096578000, 1112306400, 1128114000, 1143842400,
+            1158872400, 1175205600, 1193950800, 1207260000, 1225486800, 1238104800, 1256850000, 1270159200,
+            1288299600, 1301608800, 1319749200, 1333058400, 1351198800, 1364508000, 1382648400, 1395957600,
+            1414702800, 1427407200, 1446152400, 1458856800, 1477602000, 1490911200, 1509051600, 1522360800,
+            1540501200, 1553810400, 1571950800, 1585260000, 1604005200, 1616709600, 1635454800, 1648159200,
+            1666904400,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"), daylight: nil)
+    )
+
+    static let asiaDhaka = TZ.Zone.Record(
+        name: "Asia/Dhaka",
+        observances: [
+            .init(offset: .seconds(21700), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21200), isDaylightSaving: false, abbreviation: "HMT"),
+            .init(offset: .seconds(23400), isDaylightSaving: false, abbreviation: "+0630"),
+            .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "+0530"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+        ],
+        instants: [
+            -2524543300, -891582800, -872058600, -862637400, -576138600, 1245430800, 1262278800,
+        ],
+        types: [
+            1, 2, 3, 2, 4, 5, 4,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"), daylight: nil)
+    )
+
+    static let asiaDili = TZ.Zone.Record(
+        name: "Asia/Dili",
+        observances: [
+            .init(offset: .seconds(30140), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+        ],
+        instants: [
+            -1830412800, -879152400, 199897200, 969120000,
+        ],
+        types: [
+            1, 2, 1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"), daylight: nil)
+    )
+
+    static let asiaDubai = TZ.Zone.Record(
+        name: "Asia/Dubai",
+        observances: [
+            .init(offset: .seconds(13272), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+        ],
+        instants: [
+            -1577936472,
+        ],
+        types: [
+            1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"), daylight: nil)
+    )
+
+    static let asiaDushanbe = TZ.Zone.Record(
+        name: "Asia/Dushanbe",
+        observances: [
+            .init(offset: .seconds(16512), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+        ],
+        instants: [
+            -1441168512, -1247547600, 354909600, 370717200, 386445600, 402253200, 417981600, 433789200,
+            449604000, 465336000, 481060800, 496785600, 512510400, 528235200, 543960000, 559684800,
+            575409600, 591134400, 606859200, 622584000, 638308800, 654638400, 670363200, 684363600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaFamagusta = TZ.Zone.Record(
+        name: "Asia/Famagusta",
+        observances: [
+            .init(offset: .seconds(8148), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+        ],
+        instants: [
+            -1518920148, 166572000, 182293200, 200959200, 213829200, 228866400, 243982800, 260316000,
+            276123600, 291765600, 307486800, 323820000, 338936400, 354664800, 370386000, 386114400,
+            401835600, 417564000, 433285200, 449013600, 465339600, 481068000, 496789200, 512517600,
+            528238800, 543967200, 559688400, 575416800, 591138000, 606866400, 622587600, 638316000,
+            654642000, 670370400, 686091600, 701820000, 717541200, 733269600, 748990800, 764719200,
+            780440400, 796168800, 811890000, 828223200, 843944400, 859672800, 875394000, 891122400,
+            909277200, 922582800, 941331600, 954032400, 972781200, 985482000, 1004230800, 1017536400,
+            1035680400, 1048986000, 1067130000, 1080435600, 1099184400, 1111885200, 1130634000, 1143334800,
+            1162083600, 1174784400, 1193533200, 1206838800, 1224982800, 1238288400, 1256432400, 1269738000,
+            1288486800, 1301187600, 1319936400, 1332637200, 1351386000, 1364691600, 1382835600, 1396141200,
+            1414285200, 1427590800, 1445734800, 1459040400, 1473282000, 1509238800, 1521939600, 1540688400,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 3, 2, 1, 2,
+        ],
+        recurrence: .init(
+            standard: .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            daylight: .init(
+                observance: .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+                start: .init(month: .march, week: .last, weekday: .sunday, time: .seconds(10800)),
+                end: .init(month: .october, week: .last, weekday: .sunday, time: .seconds(14400))
+            )
+        )
+    )
+
+    static let asiaGaza = TZ.Zone.Record(
+        name: "Asia/Gaza",
+        observances: [
+            .init(offset: .seconds(8272), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "IDT"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "IST"),
+        ],
+        instants: [
+            -2185409872, -933638400, -923097600, -919036800, -857347200, -844300800, -825811200, -812678400,
+            -794188800, -779846400, -762652800, -748310400, -731116800, -399088800, -386650800, -368330400,
+            -355114800, -336790800, -323654400, -305168400, -292032000, -273632400, -260496000, -242096400,
+            -228960000, -210560400, -197424000, -178938000, -165801600, -147402000, -134265600, -115866000,
+            -102643200, -84330000, -81313200, 142380000, 150843600, 167176800, 178664400, 334101600,
+            337730400, 452642400, 462319200, 482277600, 494370000, 516751200, 526424400, 545436000,
+            558478800, 576626400, 589323600, 609890400, 620773200, 638316000, 651618000, 669765600,
+            683672400, 701820000, 715726800, 733701600, 747176400, 765151200, 778021200, 796600800,
+            810075600, 820447200, 828655200, 843170400, 860104800, 874620000, 891554400, 906069600,
+            924213600, 939934800, 956268000, 971989200, 987717600, 1003438800, 1019167200, 1034888400,
+            1050616800, 1066338000, 1082066400, 1096581600, 1113516000, 1128380400, 1143842400, 1158872400,
+            1175378400, 1189638000, 1206655200, 1219957200, 1238104800, 1252015200, 1269640860, 1281474000,
+            1301608860, 1312146000, 1333058400, 1348178400, 1364508000, 1380229200, 1395957600, 1414098000,
+            1427493600, 1445551200, 1458946800, 1477692000, 1490396400, 1509141600, 1521846000, 1540591200,
+            1553810400, 1572037200, 1585346400, 1603490400, 1616796000, 1635458400, 1648332000, 1666998000,
+            1682726400, 1698447600, 1713571200, 1729897200, 1744416000, 1761346800, 1774656000, 1792796400,
+            1806105600, 1824850800, 1837555200, 1856300400, 1869004800, 1887750000, 1901059200, 1919199600,
+            1932508800, 1950649200, 1963958400, 1982703600, 1995408000, 2014153200, 2026857600, 2045602800,
+            2058307200, 2077052400, 2090361600, 2107897200, 2121811200, 2138742000, 2153260800, 2168982000,
+            2184710400, 2199826800, 2216160000, 2230066800, 2234304000, 2234905200, 2248214400, 2260911600,
+            2264544000, 2266354800, 2279664000, 2291756400, 2295388800, 2297804400, 2311113600, 2321996400,
+            2326233600, 2329254000, 2342563200, 2352841200, 2356473600, 2361308400, 2374012800, 2383686000,
+            2387318400, 2392758000, 2405462400, 2413926000, 2418163200, 2424207600, 2437516800, 2444770800,
+            2448403200, 2455657200, 2468966400, 2475010800, 2479248000, 2487106800, 2500416000, 2505855600,
+            2509488000, 2519161200, 2531865600, 2536700400, 2540332800, 2550610800, 2563315200, 2566940400,
+            2571177600, 2582060400, 2595369600, 2597785200, 2601417600, 2613510000, 2626819200, 2628025200,
+            2632262400, 2644959600, 2658268800, 2658870000, 2663107200, 2676409200, 2693347200, 2708463600,
+            2724192000, 2739913200, 2754432000, 2771362800, 2785276800, 2802812400, 2816121600, 2834262000,
+            2847571200, 2866316400, 2879020800, 2897766000, 2910470400, 2929215600, 2941920000, 2960665200,
+            2973974400, 2992114800, 3005424000, 3023564400, 3036873600, 3055618800, 3068323200, 3087068400,
+            3099772800, 3117913200, 3131827200, 3148758000, 3163276800, 3179602800, 3194726400, 3209842800,
+            3226176000, 3240687600, 3244320000, 3244921200, 3257625600, 3271532400, 3275164800, 3276370800,
+            3289075200, 3301772400, 3306009600, 3307820400, 3321129600, 3332617200, 3336249600, 3339270000,
+            3352579200, 3362857200, 3367094400, 3370719600, 3384028800, 3393702000, 3397939200, 3402774000,
+            3415478400, 3424546800, 3428179200, 3434223600, 3446928000, 3454786800, 3459024000, 3465673200,
+            3478982400, 3485631600, 3489264000, 3497122800, 3510432000, 3516476400, 3520108800, 3528572400,
+            3541881600, 3546716400, 3550953600, 3560022000, 3573331200, 3577561200, 3581193600, 3592076400,
+            3604780800, 3607801200, 3612038400, 3623526000, 3636230400, 3638646000, 3642883200, 3654975600,
+            3668284800, 3669490800, 3673123200, 3686425200, 3699734400, 3717874800,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3,
+            4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+        ],
+        recurrence: .init(
+            standard: .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            daylight: .init(
+                observance: .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+                start: .init(month: .march, week: .fourth, weekday: .thursday, time: .seconds(180000)),
+                end: .init(month: .october, week: .fourth, weekday: .thursday, time: .seconds(180000))
+            )
+        )
+    )
+
+    static let asiaHebron = TZ.Zone.Record(
+        name: "Asia/Hebron",
+        observances: [
+            .init(offset: .seconds(8423), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "IDT"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "IST"),
+        ],
+        instants: [
+            -2185410023, -933638400, -923097600, -919036800, -857347200, -844300800, -825811200, -812678400,
+            -794188800, -779846400, -762652800, -748310400, -731116800, -399088800, -386650800, -368330400,
+            -355114800, -336790800, -323654400, -305168400, -292032000, -273632400, -260496000, -242096400,
+            -228960000, -210560400, -197424000, -178938000, -165801600, -147402000, -134265600, -115866000,
+            -102643200, -84330000, -81313200, 142380000, 150843600, 167176800, 178664400, 334101600,
+            337730400, 452642400, 462319200, 482277600, 494370000, 516751200, 526424400, 545436000,
+            558478800, 576626400, 589323600, 609890400, 620773200, 638316000, 651618000, 669765600,
+            683672400, 701820000, 715726800, 733701600, 747176400, 765151200, 778021200, 796600800,
+            810075600, 820447200, 828655200, 843170400, 860104800, 874620000, 891554400, 906069600,
+            924213600, 939934800, 956268000, 971989200, 987717600, 1003438800, 1019167200, 1034888400,
+            1050616800, 1066338000, 1082066400, 1096581600, 1113516000, 1128380400, 1143842400, 1158872400,
+            1175378400, 1189638000, 1206655200, 1220216400, 1238104800, 1252015200, 1269554400, 1281474000,
+            1301608860, 1312146000, 1314655200, 1317330000, 1333058400, 1348178400, 1364508000, 1380229200,
+            1395957600, 1414098000, 1427493600, 1445551200, 1458946800, 1477692000, 1490396400, 1509141600,
+            1521846000, 1540591200, 1553810400, 1572037200, 1585346400, 1603490400, 1616796000, 1635458400,
+            1648332000, 1666998000, 1682726400, 1698447600, 1713571200, 1729897200, 1744416000, 1761346800,
+            1774656000, 1792796400, 1806105600, 1824850800, 1837555200, 1856300400, 1869004800, 1887750000,
+            1901059200, 1919199600, 1932508800, 1950649200, 1963958400, 1982703600, 1995408000, 2014153200,
+            2026857600, 2045602800, 2058307200, 2077052400, 2090361600, 2107897200, 2121811200, 2138742000,
+            2153260800, 2168982000, 2184710400, 2199826800, 2216160000, 2230066800, 2234304000, 2234905200,
+            2248214400, 2260911600, 2264544000, 2266354800, 2279664000, 2291756400, 2295388800, 2297804400,
+            2311113600, 2321996400, 2326233600, 2329254000, 2342563200, 2352841200, 2356473600, 2361308400,
+            2374012800, 2383686000, 2387318400, 2392758000, 2405462400, 2413926000, 2418163200, 2424207600,
+            2437516800, 2444770800, 2448403200, 2455657200, 2468966400, 2475010800, 2479248000, 2487106800,
+            2500416000, 2505855600, 2509488000, 2519161200, 2531865600, 2536700400, 2540332800, 2550610800,
+            2563315200, 2566940400, 2571177600, 2582060400, 2595369600, 2597785200, 2601417600, 2613510000,
+            2626819200, 2628025200, 2632262400, 2644959600, 2658268800, 2658870000, 2663107200, 2676409200,
+            2693347200, 2708463600, 2724192000, 2739913200, 2754432000, 2771362800, 2785276800, 2802812400,
+            2816121600, 2834262000, 2847571200, 2866316400, 2879020800, 2897766000, 2910470400, 2929215600,
+            2941920000, 2960665200, 2973974400, 2992114800, 3005424000, 3023564400, 3036873600, 3055618800,
+            3068323200, 3087068400, 3099772800, 3117913200, 3131827200, 3148758000, 3163276800, 3179602800,
+            3194726400, 3209842800, 3226176000, 3240687600, 3244320000, 3244921200, 3257625600, 3271532400,
+            3275164800, 3276370800, 3289075200, 3301772400, 3306009600, 3307820400, 3321129600, 3332617200,
+            3336249600, 3339270000, 3352579200, 3362857200, 3367094400, 3370719600, 3384028800, 3393702000,
+            3397939200, 3402774000, 3415478400, 3424546800, 3428179200, 3434223600, 3446928000, 3454786800,
+            3459024000, 3465673200, 3478982400, 3485631600, 3489264000, 3497122800, 3510432000, 3516476400,
+            3520108800, 3528572400, 3541881600, 3546716400, 3550953600, 3560022000, 3573331200, 3577561200,
+            3581193600, 3592076400, 3604780800, 3607801200, 3612038400, 3623526000, 3636230400, 3638646000,
+            3642883200, 3654975600, 3668284800, 3669490800, 3673123200, 3686425200, 3699734400, 3717874800,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3,
+            4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+        ],
+        recurrence: .init(
+            standard: .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            daylight: .init(
+                observance: .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+                start: .init(month: .march, week: .fourth, weekday: .thursday, time: .seconds(180000)),
+                end: .init(month: .october, week: .fourth, weekday: .thursday, time: .seconds(180000))
+            )
+        )
+    )
+
+    static let asiaHoChiMinh = TZ.Zone.Record(
+        name: "Asia/Ho_Chi_Minh",
+        observances: [
+            .init(offset: .seconds(25590), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(25590), isDaylightSaving: false, abbreviation: "PLMT"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+        ],
+        instants: [
+            -2004073590, -1851577590, -852105600, -782643600, -767869200, -718095600, -457772400, -315648000,
+            171820800,
+        ],
+        types: [
+            1, 2, 3, 4, 2, 3, 2, 3, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaHongKong = TZ.Zone.Record(
+        name: "Asia/Hong_Kong",
+        observances: [
+            .init(offset: .seconds(27402), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "HKT"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "HKST"),
+            .init(offset: .seconds(30600), isDaylightSaving: true, abbreviation: "HKWT"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"),
+        ],
+        instants: [
+            -2056690800, -900910800, -891579600, -884248200, -761209200, -747907200, -728541000, -717049800,
+            -697091400, -683785800, -668061000, -654755400, -636611400, -623305800, -605161800, -591856200,
+            -573712200, -559801800, -541657800, -528352200, -510211800, -498112200, -478762200, -466662600,
+            -446707800, -435213000, -415258200, -403158600, -383808600, -371709000, -352359000, -340259400,
+            -320909400, -308809800, -288855000, -277360200, -257405400, -245910600, -225955800, -213856200,
+            -194506200, -182406600, -163056600, -148537800, -132816600, -117088200, -101367000, -85638600,
+            -69312600, -53584200, -37863000, -22134600, -6413400, 9315000, 25036200, 40764600,
+            56485800, 72214200, 88540200, 104268600, 119989800, 126041400, 151439400, 167167800,
+            182889000, 198617400, 214338600, 295385400, 309292200,
+        ],
+        types: [
+            1, 2, 3, 4, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+            1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "HKT"), daylight: nil)
+    )
+
+    static let asiaHovd = TZ.Zone.Record(
+        name: "Asia/Hovd",
+        observances: [
+            .init(offset: .seconds(21996), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+        ],
+        instants: [
+            -2032927596, 252439200, 417978000, 433785600, 449600400, 465321600, 481050000, 496771200,
+            512499600, 528220800, 543949200, 559670400, 575398800, 591120000, 606848400, 622569600,
+            638298000, 654624000, 670352400, 686073600, 701802000, 717523200, 733251600, 748972800,
+            764701200, 780422400, 796150800, 811872000, 828205200, 843926400, 859654800, 875376000,
+            891104400, 906825600, 988398000, 1001700000, 1017428400, 1033149600, 1048878000, 1064599200,
+            1080327600, 1096048800, 1111777200, 1127498400, 1143226800, 1159552800, 1427482800, 1443196800,
+            1458932400, 1474646400,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaIrkutsk = TZ.Zone.Record(
+        name: "Asia/Irkutsk",
+        observances: [
+            .init(offset: .seconds(25025), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(25025), isDaylightSaving: false, abbreviation: "IMT"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "+09"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+        ],
+        instants: [
+            -2840165825, -1575874625, -1247554800, 354902400, 370710000, 386438400, 402246000, 417974400,
+            433782000, 449596800, 465328800, 481053600, 496778400, 512503200, 528228000, 543952800,
+            559677600, 575402400, 591127200, 606852000, 622576800, 638301600, 654631200, 670356000,
+            686084400, 695761200, 701805600, 717530400, 733255200, 748980000, 764704800, 780429600,
+            796154400, 811879200, 828208800, 846352800, 859658400, 877802400, 891108000, 909252000,
+            922557600, 941306400, 954007200, 972756000, 985456800, 1004205600, 1017511200, 1035655200,
+            1048960800, 1067104800, 1080410400, 1099159200, 1111860000, 1130608800, 1143309600, 1162058400,
+            1174759200, 1193508000, 1206813600, 1224957600, 1238263200, 1256407200, 1269712800, 1288461600,
+            1301162400, 1414256400,
+        ],
+        types: [
+            1, 2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 5,
+            2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4,
+            3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 6, 4,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"), daylight: nil)
+    )
+
+    static let asiaJakarta = TZ.Zone.Record(
+        name: "Asia/Jakarta",
+        observances: [
+            .init(offset: .seconds(25632), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(25632), isDaylightSaving: false, abbreviation: "BMT"),
+            .init(offset: .seconds(26400), isDaylightSaving: false, abbreviation: "+0720"),
+            .init(offset: .seconds(27000), isDaylightSaving: false, abbreviation: "+0730"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "WIB"),
+        ],
+        instants: [
+            -3231299232, -1451719200, -1172906400, -876641400, -766054800, -683883000, -620812800, -189415800,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 5, 3, 6,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "WIB"), daylight: nil)
+    )
+
+    static let asiaJayapura = TZ.Zone.Record(
+        name: "Asia/Jayapura",
+        observances: [
+            .init(offset: .seconds(33768), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(34200), isDaylightSaving: false, abbreviation: "+0930"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "WIT"),
+        ],
+        instants: [
+            -1172913768, -799491600, -189423000,
+        ],
+        types: [
+            1, 2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "WIT"), daylight: nil)
+    )
+
+    static let asiaJerusalem = TZ.Zone.Record(
+        name: "Asia/Jerusalem",
+        observances: [
+            .init(offset: .seconds(8454), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(8440), isDaylightSaving: false, abbreviation: "JMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "IDT"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "IST"),
+            .init(offset: .seconds(14400), isDaylightSaving: true, abbreviation: "IDDT"),
+        ],
+        instants: [
+            -2840149254, -1641003640, -933638400, -923097600, -919036800, -857347200, -844300800, -825811200,
+            -812678400, -794188800, -779846400, -762652800, -748310400, -731116800, -681955200, -673228800,
+            -667958400, -652320000, -636422400, -622080000, -608947200, -591840000, -572486400, -558576000,
+            -542851200, -527731200, -514425600, -490838400, -482976000, -459388800, -451526400, -428544000,
+            -418262400, -400118400, -387417600, 142380000, 150843600, 167176800, 178664400, 334101600,
+            337730400, 452642400, 462319200, 482277600, 494370000, 516751200, 526424400, 545436000,
+            558478800, 576626400, 589323600, 609890400, 620773200, 638316000, 651618000, 669765600,
+            683672400, 701820000, 715726800, 733701600, 747176400, 765151200, 778021200, 796600800,
+            810075600, 826840800, 842821200, 858895200, 874184400, 890344800, 905029200, 923011200,
+            936313200, 955670400, 970783200, 986770800, 1001282400, 1017356400, 1033941600, 1048806000,
+            1065132000, 1081292400, 1095804000, 1112313600, 1128812400, 1143763200, 1159657200, 1175212800,
+            1189897200, 1206662400, 1223161200, 1238112000, 1254006000, 1269561600, 1284246000, 1301616000,
+            1317510000, 1333065600, 1348354800, 1364515200, 1382828400, 1395964800, 1414278000,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3,
+        ],
+        recurrence: .init(
+            standard: .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "IST"),
+            daylight: .init(
+                observance: .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "IDT"),
+                start: .init(month: .march, week: .fourth, weekday: .thursday, time: .seconds(93600)),
+                end: .init(month: .october, week: .last, weekday: .sunday, time: .seconds(7200))
+            )
+        )
+    )
+
+    static let asiaKabul = TZ.Zone.Record(
+        name: "Asia/Kabul",
+        observances: [
+            .init(offset: .seconds(16608), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(16200), isDaylightSaving: false, abbreviation: "+0430"),
+        ],
+        instants: [
+            -2524538208, -788932800,
+        ],
+        types: [
+            1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(16200), isDaylightSaving: false, abbreviation: "+0430"), daylight: nil)
+    )
+
+    static let asiaKamchatka = TZ.Zone.Record(
+        name: "Asia/Kamchatka",
+        observances: [
+            .init(offset: .seconds(38076), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+            .init(offset: .seconds(46800), isDaylightSaving: true, abbreviation: "+13"),
+            .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"),
+            .init(offset: .seconds(43200), isDaylightSaving: true, abbreviation: "+12"),
+        ],
+        instants: [
+            -1487759676, -1247569200, 354888000, 370695600, 386424000, 402231600, 417960000, 433767600,
+            449582400, 465314400, 481039200, 496764000, 512488800, 528213600, 543938400, 559663200,
+            575388000, 591112800, 606837600, 622562400, 638287200, 654616800, 670341600, 686070000,
+            695746800, 701791200, 717516000, 733240800, 748965600, 764690400, 780415200, 796140000,
+            811864800, 828194400, 846338400, 859644000, 877788000, 891093600, 909237600, 922543200,
+            941292000, 953992800, 972741600, 985442400, 1004191200, 1017496800, 1035640800, 1048946400,
+            1067090400, 1080396000, 1099144800, 1111845600, 1130594400, 1143295200, 1162044000, 1174744800,
+            1193493600, 1206799200, 1224943200, 1238248800, 1256392800, 1269698400, 1288450800, 1301151600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"), daylight: nil)
+    )
+
+    static let asiaKarachi = TZ.Zone.Record(
+        name: "Asia/Karachi",
+        observances: [
+            .init(offset: .seconds(16092), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "+0530"),
+            .init(offset: .seconds(23400), isDaylightSaving: true, abbreviation: "+0630"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "PKST"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "PKT"),
+        ],
+        instants: [
+            -1988166492, -862637400, -764145000, -576135000, 38775600, 1018119600, 1033840800, 1212260400,
+            1225476000, 1239735600, 1257012000,
+        ],
+        types: [
+            1, 2, 1, 3, 5, 4, 5, 4, 5, 4, 5,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "PKT"), daylight: nil)
+    )
+
+    static let asiaKathmandu = TZ.Zone.Record(
+        name: "Asia/Kathmandu",
+        observances: [
+            .init(offset: .seconds(20476), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "+0530"),
+            .init(offset: .seconds(20700), isDaylightSaving: false, abbreviation: "+0545"),
+        ],
+        instants: [
+            -1577943676, 504901800,
+        ],
+        types: [
+            1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(20700), isDaylightSaving: false, abbreviation: "+0545"), daylight: nil)
+    )
+
+    static let asiaKhandyga = TZ.Zone.Record(
+        name: "Asia/Khandyga",
+        observances: [
+            .init(offset: .seconds(32533), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "+10"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "+09"),
+            .init(offset: .seconds(39600), isDaylightSaving: true, abbreviation: "+11"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+        ],
+        instants: [
+            -1579424533, -1247558400, 354898800, 370706400, 386434800, 402242400, 417970800, 433778400,
+            449593200, 465325200, 481050000, 496774800, 512499600, 528224400, 543949200, 559674000,
+            575398800, 591123600, 606848400, 622573200, 638298000, 654627600, 670352400, 686080800,
+            695757600, 701802000, 717526800, 733251600, 748976400, 764701200, 780426000, 796150800,
+            811875600, 828205200, 846349200, 859654800, 877798800, 891104400, 909248400, 922554000,
+            941302800, 954003600, 972752400, 985453200, 1004202000, 1017507600, 1035651600, 1048957200,
+            1067101200, 1072882800, 1080403200, 1099152000, 1111852800, 1130601600, 1143302400, 1162051200,
+            1174752000, 1193500800, 1206806400, 1224950400, 1238256000, 1256400000, 1269705600, 1288454400,
+            1301155200, 1315832400, 1414252800,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 7, 6, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"), daylight: nil)
+    )
+
+    static let asiaKolkata = TZ.Zone.Record(
+        name: "Asia/Kolkata",
+        observances: [
+            .init(offset: .seconds(21208), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21200), isDaylightSaving: false, abbreviation: "HMT"),
+            .init(offset: .seconds(19270), isDaylightSaving: false, abbreviation: "MMT"),
+            .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "IST"),
+            .init(offset: .seconds(23400), isDaylightSaving: true, abbreviation: "+0630"),
+        ],
+        instants: [
+            -3645237208, -3155694800, -2019705670, -891581400, -872058600, -862637400, -764145000,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 4, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "IST"), daylight: nil)
+    )
+
+    static let asiaKrasnoyarsk = TZ.Zone.Record(
+        name: "Asia/Krasnoyarsk",
+        observances: [
+            .init(offset: .seconds(22286), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+        ],
+        instants: [
+            -1577513486, -1247551200, 354906000, 370713600, 386442000, 402249600, 417978000, 433785600,
+            449600400, 465332400, 481057200, 496782000, 512506800, 528231600, 543956400, 559681200,
+            575406000, 591130800, 606855600, 622580400, 638305200, 654634800, 670359600, 686088000,
+            695764800, 701809200, 717534000, 733258800, 748983600, 764708400, 780433200, 796158000,
+            811882800, 828212400, 846356400, 859662000, 877806000, 891111600, 909255600, 922561200,
+            941310000, 954010800, 972759600, 985460400, 1004209200, 1017514800, 1035658800, 1048964400,
+            1067108400, 1080414000, 1099162800, 1111863600, 1130612400, 1143313200, 1162062000, 1174762800,
+            1193511600, 1206817200, 1224961200, 1238266800, 1256410800, 1269716400, 1288465200, 1301166000,
+            1414260000,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaKuching = TZ.Zone.Record(
+        name: "Asia/Kuching",
+        observances: [
+            .init(offset: .seconds(26480), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(27000), isDaylightSaving: false, abbreviation: "+0730"),
+            .init(offset: .seconds(30000), isDaylightSaving: true, abbreviation: "+0820"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+        ],
+        instants: [
+            -1383463280, -1167636600, -1082448000, -1074586800, -1050825600, -1042964400, -1019289600, -1011428400,
+            -987753600, -979892400, -956217600, -948356400, -924595200, -916734000, -893059200, -885198000,
+            -879667200, -767005200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"), daylight: nil)
+    )
+
+    static let asiaMacau = TZ.Zone.Record(
+        name: "Asia/Macau",
+        observances: [
+            .init(offset: .seconds(27250), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "CST"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "+10"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "CDT"),
+        ],
+        instants: [
+            -2056692850, -884509200, -873280800, -855918000, -841744800, -828529200, -765363600, -747046800,
+            -733827600, -716461200, -697021200, -683715600, -667990800, -654771600, -636627600, -623322000,
+            -605178000, -591872400, -573642000, -559818000, -541674000, -528368400, -510224400, -498128400,
+            -478774800, -466678800, -446720400, -435229200, -415258200, -403158600, -383808600, -371709000,
+            -352359000, -340259400, -320909400, -308809800, -288855000, -277360200, -257405400, -245910600,
+            -225955800, -213856200, -194506200, -182406600, -163056600, -148537800, -132820200, -117088200,
+            -101370600, -85638600, -69312600, -53584200, -37863000, -22134600, -6413400, 9315000,
+            25036200, 40764600, 56485800, 72214200, 88540200, 104268600, 119989800, 126041400,
+            151439400, 167167800, 182889000, 198617400, 214338600, 295385400, 309292200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4,
+            1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4,
+            1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "CST"), daylight: nil)
+    )
+
+    static let asiaMagadan = TZ.Zone.Record(
+        name: "Asia/Magadan",
+        observances: [
+            .init(offset: .seconds(36192), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+            .init(offset: .seconds(43200), isDaylightSaving: true, abbreviation: "+12"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+            .init(offset: .seconds(39600), isDaylightSaving: true, abbreviation: "+11"),
+            .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"),
+        ],
+        instants: [
+            -1441188192, -1247565600, 354891600, 370699200, 386427600, 402235200, 417963600, 433771200,
+            449586000, 465318000, 481042800, 496767600, 512492400, 528217200, 543942000, 559666800,
+            575391600, 591116400, 606841200, 622566000, 638290800, 654620400, 670345200, 686073600,
+            695750400, 701794800, 717519600, 733244400, 748969200, 764694000, 780418800, 796143600,
+            811868400, 828198000, 846342000, 859647600, 877791600, 891097200, 909241200, 922546800,
+            941295600, 953996400, 972745200, 985446000, 1004194800, 1017500400, 1035644400, 1048950000,
+            1067094000, 1080399600, 1099148400, 1111849200, 1130598000, 1143298800, 1162047600, 1174748400,
+            1193497200, 1206802800, 1224946800, 1238252400, 1256396400, 1269702000, 1288450800, 1301151600,
+            1414245600, 1461427200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"), daylight: nil)
+    )
+
+    static let asiaMakassar = TZ.Zone.Record(
+        name: "Asia/Makassar",
+        observances: [
+            .init(offset: .seconds(28656), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28656), isDaylightSaving: false, abbreviation: "MMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "WITA"),
+        ],
+        instants: [
+            -1577951856, -1172908656, -880272000, -766054800,
+        ],
+        types: [
+            1, 2, 3, 4,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "WITA"), daylight: nil)
+    )
+
+    static let asiaManila = TZ.Zone.Record(
+        name: "Asia/Manila",
+        observances: [
+            .init(offset: .seconds(-57368), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(29032), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "PDT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "PST"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"),
+        ],
+        instants: [
+            -3944621032, -2219083200, -1046678400, -1040115600, -885024000, -880016400, -783594000, -760093200,
+            -496224000, -491562000, 228326400, 243702000, 643219200, 649177200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 4, 2, 3, 2, 3, 2, 3, 2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "PST"), daylight: nil)
+    )
+
+    static let asiaNicosia = TZ.Zone.Record(
+        name: "Asia/Nicosia",
+        observances: [
+            .init(offset: .seconds(8008), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+            .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+        ],
+        instants: [
+            -1518920008, 166572000, 182293200, 200959200, 213829200, 228866400, 243982800, 260316000,
+            276123600, 291765600, 307486800, 323820000, 338936400, 354664800, 370386000, 386114400,
+            401835600, 417564000, 433285200, 449013600, 465339600, 481068000, 496789200, 512517600,
+            528238800, 543967200, 559688400, 575416800, 591138000, 606866400, 622587600, 638316000,
+            654642000, 670370400, 686091600, 701820000, 717541200, 733269600, 748990800, 764719200,
+            780440400, 796168800, 811890000, 828223200, 843944400, 859672800, 875394000, 891122400,
+            909277200, 922582800, 941331600,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2,
+        ],
+        recurrence: .init(
+            standard: .init(offset: .seconds(7200), isDaylightSaving: false, abbreviation: "EET"),
+            daylight: .init(
+                observance: .init(offset: .seconds(10800), isDaylightSaving: true, abbreviation: "EEST"),
+                start: .init(month: .march, week: .last, weekday: .sunday, time: .seconds(10800)),
+                end: .init(month: .october, week: .last, weekday: .sunday, time: .seconds(14400))
+            )
+        )
+    )
+
+    static let asiaNovokuznetsk = TZ.Zone.Record(
+        name: "Asia/Novokuznetsk",
+        observances: [
+            .init(offset: .seconds(20928), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+        ],
+        instants: [
+            -1441259328, -1247551200, 354906000, 370713600, 386442000, 402249600, 417978000, 433785600,
+            449600400, 465332400, 481057200, 496782000, 512506800, 528231600, 543956400, 559681200,
+            575406000, 591130800, 606855600, 622580400, 638305200, 654634800, 670359600, 686088000,
+            695764800, 701809200, 717534000, 733258800, 748983600, 764708400, 780433200, 796158000,
+            811882800, 828212400, 846356400, 859662000, 877806000, 891111600, 909255600, 922561200,
+            941310000, 954010800, 972759600, 985460400, 1004209200, 1017514800, 1035658800, 1048964400,
+            1067108400, 1080414000, 1099162800, 1111863600, 1130612400, 1143313200, 1162062000, 1174762800,
+            1193511600, 1206817200, 1224961200, 1238266800, 1256410800, 1269716400, 1288468800, 1301169600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaNovosibirsk = TZ.Zone.Record(
+        name: "Asia/Novosibirsk",
+        observances: [
+            .init(offset: .seconds(19900), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+        ],
+        instants: [
+            -1579476700, -1247551200, 354906000, 370713600, 386442000, 402249600, 417978000, 433785600,
+            449600400, 465332400, 481057200, 496782000, 512506800, 528231600, 543956400, 559681200,
+            575406000, 591130800, 606855600, 622580400, 638305200, 654634800, 670359600, 686088000,
+            695764800, 701809200, 717534000, 733258800, 738086400, 748987200, 764712000, 780436800,
+            796161600, 811886400, 828216000, 846360000, 859665600, 877809600, 891115200, 909259200,
+            922564800, 941313600, 954014400, 972763200, 985464000, 1004212800, 1017518400, 1035662400,
+            1048968000, 1067112000, 1080417600, 1099166400, 1111867200, 1130616000, 1143316800, 1162065600,
+            1174766400, 1193515200, 1206820800, 1224964800, 1238270400, 1256414400, 1269720000, 1288468800,
+            1301169600, 1414263600, 1469304000,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+            4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 3, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaOmsk = TZ.Zone.Record(
+        name: "Asia/Omsk",
+        observances: [
+            .init(offset: .seconds(17610), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+        ],
+        instants: [
+            -1582088010, -1247547600, 354909600, 370717200, 386445600, 402253200, 417981600, 433789200,
+            449604000, 465336000, 481060800, 496785600, 512510400, 528235200, 543960000, 559684800,
+            575409600, 591134400, 606859200, 622584000, 638308800, 654638400, 670363200, 686091600,
+            695768400, 701812800, 717537600, 733262400, 748987200, 764712000, 780436800, 796161600,
+            811886400, 828216000, 846360000, 859665600, 877809600, 891115200, 909259200, 922564800,
+            941313600, 954014400, 972763200, 985464000, 1004212800, 1017518400, 1035662400, 1048968000,
+            1067112000, 1080417600, 1099166400, 1111867200, 1130616000, 1143316800, 1162065600, 1174766400,
+            1193515200, 1206820800, 1224964800, 1238270400, 1256414400, 1269720000, 1288468800, 1301169600,
+            1414263600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"), daylight: nil)
+    )
+
+    static let asiaOral = TZ.Zone.Record(
+        name: "Asia/Oral",
+        observances: [
+            .init(offset: .seconds(12324), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+        ],
+        instants: [
+            -1441164324, -1247540400, 354913200, 370720800, 386445600, 402256800, 417985200, 433792800,
+            449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400,
+            575413200, 591138000, 606862800, 622591200, 638316000, 654645600, 670370400, 686095200,
+            695772000, 701816400, 717544800, 733269600, 748994400, 764719200, 780444000, 796168800,
+            811893600, 828223200, 846367200, 859672800, 877816800, 891122400, 909266400, 922572000,
+            941320800, 954021600, 972770400, 985471200, 1004220000, 1017525600, 1035669600, 1048975200,
+            1067119200, 1080424800, 1099173600,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 5, 6, 5, 6, 5, 6,
+            2, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5,
+            6, 5, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaPontianak = TZ.Zone.Record(
+        name: "Asia/Pontianak",
+        observances: [
+            .init(offset: .seconds(26240), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(26240), isDaylightSaving: false, abbreviation: "PMT"),
+            .init(offset: .seconds(27000), isDaylightSaving: false, abbreviation: "+0730"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "WITA"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "WIB"),
+        ],
+        instants: [
+            -1946186240, -1172906240, -881220600, -766054800, -683883000, -620812800, -189415800, 567964800,
+        ],
+        types: [
+            1, 2, 3, 2, 4, 2, 5, 6,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "WIB"), daylight: nil)
+    )
+
+    static let asiaPyongyang = TZ.Zone.Record(
+        name: "Asia/Pyongyang",
+        observances: [
+            .init(offset: .seconds(30180), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(30600), isDaylightSaving: false, abbreviation: "KST"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "KST"),
+        ],
+        instants: [
+            -1948782180, -1830414600, -768646800, 1439564400, 1525446000,
+        ],
+        types: [
+            1, 2, 3, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "KST"), daylight: nil)
+    )
+
+    static let asiaQatar = TZ.Zone.Record(
+        name: "Asia/Qatar",
+        observances: [
+            .init(offset: .seconds(12368), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+        ],
+        instants: [
+            -1577935568, 76190400,
+        ],
+        types: [
+            1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"), daylight: nil)
+    )
+
+    static let asiaQostanay = TZ.Zone.Record(
+        name: "Asia/Qostanay",
+        observances: [
+            .init(offset: .seconds(15268), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+        ],
+        instants: [
+            -1441167268, -1247544000, 354913200, 370720800, 386445600, 402256800, 417985200, 433792800,
+            449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400,
+            575413200, 591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686095200,
+            695772000, 701816400, 717541200, 733266000, 748990800, 764715600, 780440400, 796165200,
+            811890000, 828219600, 846363600, 859669200, 877813200, 891118800, 909262800, 922568400,
+            941317200, 954018000, 972766800, 985467600, 1004216400, 1017522000, 1035666000, 1048971600,
+            1067115600, 1080421200, 1099170000, 1709229600,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 5, 1,
+            2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 4, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaQyzylorda = TZ.Zone.Record(
+        name: "Asia/Qyzylorda",
+        observances: [
+            .init(offset: .seconds(15712), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+        ],
+        instants: [
+            -1441167712, -1247544000, 354913200, 370720800, 386445600, 402256800, 417985200, 433792800,
+            449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400,
+            575413200, 591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686095200,
+            695768400, 701812800, 717541200, 733266000, 748990800, 764715600, 780440400, 796165200,
+            811890000, 828219600, 846363600, 859669200, 877813200, 891118800, 909262800, 922568400,
+            941317200, 954018000, 972766800, 985467600, 1004216400, 1017522000, 1035666000, 1048971600,
+            1067115600, 1080421200, 1099170000, 1545328800,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 5, 2,
+            4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 4, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaRiyadh = TZ.Zone.Record(
+        name: "Asia/Riyadh",
+        observances: [
+            .init(offset: .seconds(11212), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+        ],
+        instants: [
+            -719636812,
+        ],
+        types: [
+            1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"), daylight: nil)
+    )
+
+    static let asiaSakhalin = TZ.Zone.Record(
+        name: "Asia/Sakhalin",
+        observances: [
+            .init(offset: .seconds(34248), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(43200), isDaylightSaving: true, abbreviation: "+12"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+            .init(offset: .seconds(39600), isDaylightSaving: true, abbreviation: "+11"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+        ],
+        instants: [
+            -2031039048, -768560400, 354891600, 370699200, 386427600, 402235200, 417963600, 433771200,
+            449586000, 465318000, 481042800, 496767600, 512492400, 528217200, 543942000, 559666800,
+            575391600, 591116400, 606841200, 622566000, 638290800, 654620400, 670345200, 686073600,
+            695750400, 701794800, 717519600, 733244400, 748969200, 764694000, 780418800, 796143600,
+            811868400, 828198000, 846342000, 859647600, 877795200, 891100800, 909244800, 922550400,
+            941299200, 954000000, 972748800, 985449600, 1004198400, 1017504000, 1035648000, 1048953600,
+            1067097600, 1080403200, 1099152000, 1111852800, 1130601600, 1143302400, 1162051200, 1174752000,
+            1193500800, 1206806400, 1224950400, 1238256000, 1256400000, 1269705600, 1288454400, 1301155200,
+            1414249200, 1459008000,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 5,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 4,
+            5, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 3, 5, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"), daylight: nil)
+    )
+
+    static let asiaSamarkand = TZ.Zone.Record(
+        name: "Asia/Samarkand",
+        observances: [
+            .init(offset: .seconds(16073), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+        ],
+        instants: [
+            -1441168073, -1247544000, 354913200, 370720800, 386445600, 402256800, 417985200, 433792800,
+            449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600, 559688400,
+            575413200, 591138000, 606862800, 622587600, 638312400, 654642000, 670366800, 686091600,
+        ],
+        types: [
+            1, 2, 3, 4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaSeoul = TZ.Zone.Record(
+        name: "Asia/Seoul",
+        observances: [
+            .init(offset: .seconds(30472), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(30600), isDaylightSaving: false, abbreviation: "KST"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "KDT"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "KST"),
+            .init(offset: .seconds(34200), isDaylightSaving: true, abbreviation: "KDT"),
+        ],
+        instants: [
+            -1948782472, -1830414600, -767350800, -681210000, -672228000, -654771600, -640864800, -623408400,
+            -609415200, -588848400, -577965600, -498128400, -462702600, -451733400, -429784200, -418296600,
+            -399544200, -387451800, -368094600, -356002200, -336645000, -324552600, -305195400, -293103000,
+            -264933000, 547578000, 560883600, 579027600, 592333200,
+        ],
+        types: [
+            1, 2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1,
+            4, 3, 4, 3, 4,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "KST"), daylight: nil)
+    )
+
+    static let asiaShanghai = TZ.Zone.Record(
+        name: "Asia/Shanghai",
+        observances: [
+            .init(offset: .seconds(29143), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "CDT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "CST"),
+        ],
+        instants: [
+            -2177481943, -1600675200, -1585904400, -933667200, -922093200, -908870400, -888829200, -881049600,
+            -767869200, -745833600, -733827600, -716889600, -699613200, -683884800, -670669200, -652348800,
+            -650019600, 515527200, 527014800, 545162400, 558464400, 577216800, 589914000, 608666400,
+            621968400, 640116000, 653418000, 671565600, 684867600,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
+            2, 1, 2, 1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "CST"), daylight: nil)
+    )
+
+    static let asiaSingapore = TZ.Zone.Record(
+        name: "Asia/Singapore",
+        observances: [
+            .init(offset: .seconds(24925), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(24925), isDaylightSaving: false, abbreviation: "SMT"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(26400), isDaylightSaving: true, abbreviation: "+0720"),
+            .init(offset: .seconds(26400), isDaylightSaving: false, abbreviation: "+0720"),
+            .init(offset: .seconds(27000), isDaylightSaving: false, abbreviation: "+0730"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+        ],
+        instants: [
+            -2177477725, -2038200925, -1167634800, -1073028000, -894180000, -879665400, -767005200, 378662400,
+        ],
+        types: [
+            1, 2, 3, 4, 5, 6, 5, 7,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"), daylight: nil)
+    )
+
+    static let asiaSrednekolymsk = TZ.Zone.Record(
+        name: "Asia/Srednekolymsk",
+        observances: [
+            .init(offset: .seconds(36892), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+            .init(offset: .seconds(43200), isDaylightSaving: true, abbreviation: "+12"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+            .init(offset: .seconds(39600), isDaylightSaving: true, abbreviation: "+11"),
+            .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"),
+        ],
+        instants: [
+            -1441188892, -1247565600, 354891600, 370699200, 386427600, 402235200, 417963600, 433771200,
+            449586000, 465318000, 481042800, 496767600, 512492400, 528217200, 543942000, 559666800,
+            575391600, 591116400, 606841200, 622566000, 638290800, 654620400, 670345200, 686073600,
+            695750400, 701794800, 717519600, 733244400, 748969200, 764694000, 780418800, 796143600,
+            811868400, 828198000, 846342000, 859647600, 877791600, 891097200, 909241200, 922546800,
+            941295600, 953996400, 972745200, 985446000, 1004194800, 1017500400, 1035644400, 1048950000,
+            1067094000, 1080399600, 1099148400, 1111849200, 1130598000, 1143298800, 1162047600, 1174748400,
+            1193497200, 1206802800, 1224946800, 1238252400, 1256396400, 1269702000, 1288450800, 1301151600,
+            1414245600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"), daylight: nil)
+    )
+
+    static let asiaTaipei = TZ.Zone.Record(
+        name: "Asia/Taipei",
+        observances: [
+            .init(offset: .seconds(29160), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "CST"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "CDT"),
+        ],
+        instants: [
+            -2335248360, -1017820800, -766224000, -745833600, -733827600, -716889600, -699613200, -683884800,
+            -670669200, -652348800, -639133200, -620812800, -607597200, -589276800, -576061200, -562924800,
+            -541760400, -528710400, -510224400, -497174400, -478688400, -465638400, -449830800, -434016000,
+            -418208400, -402480000, -386672400, -370944000, -355136400, -339408000, -323600400, -302515200,
+            -291978000, -270979200, -260442000, 133977600, 149785200, 165513600, 181321200, 299606400,
+            307551600,
+        ],
+        types: [
+            1, 2, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3,
+            1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "CST"), daylight: nil)
+    )
+
+    static let asiaTashkent = TZ.Zone.Record(
+        name: "Asia/Tashkent",
+        observances: [
+            .init(offset: .seconds(16631), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+        ],
+        instants: [
+            -1441168631, -1247547600, 354909600, 370717200, 386445600, 402253200, 417981600, 433789200,
+            449604000, 465336000, 481060800, 496785600, 512510400, 528235200, 543960000, 559684800,
+            575409600, 591134400, 606859200, 622584000, 638308800, 654638400, 670363200, 686091600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaTbilisi = TZ.Zone.Record(
+        name: "Asia/Tbilisi",
+        observances: [
+            .init(offset: .seconds(10751), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10751), isDaylightSaving: false, abbreviation: "TBMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(14400), isDaylightSaving: true, abbreviation: "+04"),
+        ],
+        instants: [
+            -2840151551, -1441162751, -405140400, 354916800, 370724400, 386452800, 402260400, 417988800,
+            433796400, 449611200, 465343200, 481068000, 496792800, 512517600, 528242400, 543967200,
+            559692000, 575416800, 591141600, 606866400, 622591200, 638316000, 654645600, 670370400,
+            686098800, 701816400, 717537600, 733266000, 748987200, 764715600, 780436800, 796161600,
+            811882800, 828216000, 859662000, 877806000, 891115200, 909255600, 922564800, 941310000,
+            954014400, 972759600, 985464000, 1004209200, 1017518400, 1035658800, 1048968000, 1067108400,
+            1080417600, 1088276400, 1099177200, 1111878000,
+        ],
+        types: [
+            1, 2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 5,
+            2, 5, 2, 5, 2, 5, 4, 3, 4, 3, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4,
+            3, 5, 2, 4,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"), daylight: nil)
+    )
+
+    static let asiaTehran = TZ.Zone.Record(
+        name: "Asia/Tehran",
+        observances: [
+            .init(offset: .seconds(12344), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(12344), isDaylightSaving: false, abbreviation: "TMT"),
+            .init(offset: .seconds(16200), isDaylightSaving: true, abbreviation: "+0430"),
+            .init(offset: .seconds(12600), isDaylightSaving: false, abbreviation: "+0330"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+        ],
+        instants: [
+            -1704165944, -1090466744, 227820600, 246223800, 259617600, 271108800, 279576000, 296512200,
+            306531000, 322432200, 338499000, 673216200, 685481400, 701209800, 717103800, 732745800,
+            748639800, 764281800, 780175800, 795817800, 811711800, 827353800, 843247800, 858976200,
+            874870200, 890512200, 906406200, 922048200, 937942200, 953584200, 969478200, 985206600,
+            1001100600, 1016742600, 1032636600, 1048278600, 1064172600, 1079814600, 1095708600, 1111437000,
+            1127331000, 1206045000, 1221939000, 1237667400, 1253561400, 1269203400, 1285097400, 1300739400,
+            1316633400, 1332275400, 1348169400, 1363897800, 1379791800, 1395433800, 1411327800, 1426969800,
+            1442863800, 1458505800, 1474399800, 1490128200, 1506022200, 1521664200, 1537558200, 1553200200,
+            1569094200, 1584736200, 1600630200, 1616358600, 1632252600, 1647894600, 1663788600,
+        ],
+        types: [
+            1, 3, 2, 5, 4, 5, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(12600), isDaylightSaving: false, abbreviation: "+0330"), daylight: nil)
+    )
+
+    static let asiaThimphu = TZ.Zone.Record(
+        name: "Asia/Thimphu",
+        observances: [
+            .init(offset: .seconds(21516), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(19800), isDaylightSaving: false, abbreviation: "+0530"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+        ],
+        instants: [
+            -706341516, 560025000,
+        ],
+        types: [
+            1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"), daylight: nil)
+    )
+
+    static let asiaTokyo = TZ.Zone.Record(
+        name: "Asia/Tokyo",
+        observances: [
+            .init(offset: .seconds(33539), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "JDT"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"),
+        ],
+        instants: [
+            -2587712400, -683802000, -672310800, -654771600, -640861200, -620298000, -609411600, -588848400,
+            -577962000,
+        ],
+        types: [
+            2, 1, 2, 1, 2, 1, 2, 1, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "JST"), daylight: nil)
+    )
+
+    static let asiaTomsk = TZ.Zone.Record(
+        name: "Asia/Tomsk",
+        observances: [
+            .init(offset: .seconds(20391), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+            .init(offset: .seconds(28800), isDaylightSaving: true, abbreviation: "+08"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(25200), isDaylightSaving: true, abbreviation: "+07"),
+        ],
+        instants: [
+            -1578807591, -1247551200, 354906000, 370713600, 386442000, 402249600, 417978000, 433785600,
+            449600400, 465332400, 481057200, 496782000, 512506800, 528231600, 543956400, 559681200,
+            575406000, 591130800, 606855600, 622580400, 638305200, 654634800, 670359600, 686088000,
+            695764800, 701809200, 717534000, 733258800, 748983600, 764708400, 780433200, 796158000,
+            811882800, 828212400, 846356400, 859662000, 877806000, 891111600, 909255600, 922561200,
+            941310000, 954010800, 972759600, 985460400, 1004209200, 1017514800, 1020193200, 1035662400,
+            1048968000, 1067112000, 1080417600, 1099166400, 1111867200, 1130616000, 1143316800, 1162065600,
+            1174766400, 1193515200, 1206820800, 1224964800, 1238270400, 1256414400, 1269720000, 1288468800,
+            1301169600, 1414263600, 1464465600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 4, 1,
+            4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 3, 1, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"), daylight: nil)
+    )
+
+    static let asiaUlaanbaatar = TZ.Zone.Record(
+        name: "Asia/Ulaanbaatar",
+        observances: [
+            .init(offset: .seconds(25652), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(25200), isDaylightSaving: false, abbreviation: "+07"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "+09"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+        ],
+        instants: [
+            -2032931252, 252435600, 417974400, 433782000, 449596800, 465318000, 481046400, 496767600,
+            512496000, 528217200, 543945600, 559666800, 575395200, 591116400, 606844800, 622566000,
+            638294400, 654620400, 670348800, 686070000, 701798400, 717519600, 733248000, 748969200,
+            764697600, 780418800, 796147200, 811868400, 828201600, 843922800, 859651200, 875372400,
+            891100800, 906822000, 988394400, 1001696400, 1017424800, 1033146000, 1048874400, 1064595600,
+            1080324000, 1096045200, 1111773600, 1127494800, 1143223200, 1159549200, 1427479200, 1443193200,
+            1458928800, 1474642800,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"), daylight: nil)
+    )
+
+    static let asiaUrumqi = TZ.Zone.Record(
+        name: "Asia/Urumqi",
+        observances: [
+            .init(offset: .seconds(21020), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+        ],
+        instants: [
+            -1325483420,
+        ],
+        types: [
+            1,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"), daylight: nil)
+    )
+
+    static let asiaUstNera = TZ.Zone.Record(
+        name: "Asia/Ust-Nera",
+        observances: [
+            .init(offset: .seconds(34374), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+            .init(offset: .seconds(43200), isDaylightSaving: true, abbreviation: "+12"),
+            .init(offset: .seconds(39600), isDaylightSaving: true, abbreviation: "+11"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+            .init(offset: .seconds(43200), isDaylightSaving: false, abbreviation: "+12"),
+        ],
+        instants: [
+            -1579426374, -1247558400, 354898800, 370699200, 386427600, 402235200, 417963600, 433771200,
+            449586000, 465318000, 481042800, 496767600, 512492400, 528217200, 543942000, 559666800,
+            575391600, 591116400, 606841200, 622566000, 638290800, 654620400, 670345200, 686073600,
+            695750400, 701794800, 717519600, 733244400, 748969200, 764694000, 780418800, 796143600,
+            811868400, 828198000, 846342000, 859647600, 877791600, 891097200, 909241200, 922546800,
+            941295600, 953996400, 972745200, 985446000, 1004194800, 1017500400, 1035644400, 1048950000,
+            1067094000, 1080399600, 1099148400, 1111849200, 1130598000, 1143298800, 1162047600, 1174748400,
+            1193497200, 1206802800, 1224946800, 1238252400, 1256396400, 1269702000, 1288450800, 1301151600,
+            1315828800, 1414249200,
+        ],
+        types: [
+            1, 2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 5, 6,
+            3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4,
+            3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 7, 3, 6,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"), daylight: nil)
+    )
+
+    static let asiaVladivostok = TZ.Zone.Record(
+        name: "Asia/Vladivostok",
+        observances: [
+            .init(offset: .seconds(31651), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(39600), isDaylightSaving: true, abbreviation: "+11"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "+10"),
+            .init(offset: .seconds(39600), isDaylightSaving: false, abbreviation: "+11"),
+        ],
+        instants: [
+            -1487321251, -1247562000, 354895200, 370702800, 386431200, 402238800, 417967200, 433774800,
+            449589600, 465321600, 481046400, 496771200, 512496000, 528220800, 543945600, 559670400,
+            575395200, 591120000, 606844800, 622569600, 638294400, 654624000, 670348800, 686077200,
+            695754000, 701798400, 717523200, 733248000, 748972800, 764697600, 780422400, 796147200,
+            811872000, 828201600, 846345600, 859651200, 877795200, 891100800, 909244800, 922550400,
+            941299200, 954000000, 972748800, 985449600, 1004198400, 1017504000, 1035648000, 1048953600,
+            1067097600, 1080403200, 1099152000, 1111852800, 1130601600, 1143302400, 1162051200, 1174752000,
+            1193500800, 1206806400, 1224950400, 1238256000, 1256400000, 1269705600, 1288454400, 1301155200,
+            1414249200,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"), daylight: nil)
+    )
+
+    static let asiaYakutsk = TZ.Zone.Record(
+        name: "Asia/Yakutsk",
+        observances: [
+            .init(offset: .seconds(31138), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(28800), isDaylightSaving: false, abbreviation: "+08"),
+            .init(offset: .seconds(36000), isDaylightSaving: true, abbreviation: "+10"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+            .init(offset: .seconds(32400), isDaylightSaving: true, abbreviation: "+09"),
+            .init(offset: .seconds(36000), isDaylightSaving: false, abbreviation: "+10"),
+        ],
+        instants: [
+            -1579423138, -1247558400, 354898800, 370706400, 386434800, 402242400, 417970800, 433778400,
+            449593200, 465325200, 481050000, 496774800, 512499600, 528224400, 543949200, 559674000,
+            575398800, 591123600, 606848400, 622573200, 638298000, 654627600, 670352400, 686080800,
+            695757600, 701802000, 717526800, 733251600, 748976400, 764701200, 780426000, 796150800,
+            811875600, 828205200, 846349200, 859654800, 877798800, 891104400, 909248400, 922554000,
+            941302800, 954003600, 972752400, 985453200, 1004202000, 1017507600, 1035651600, 1048957200,
+            1067101200, 1080406800, 1099155600, 1111856400, 1130605200, 1143306000, 1162054800, 1174755600,
+            1193504400, 1206810000, 1224954000, 1238259600, 1256403600, 1269709200, 1288458000, 1301158800,
+            1414252800,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+            3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 5, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"), daylight: nil)
+    )
+
+    static let asiaYangon = TZ.Zone.Record(
+        name: "Asia/Yangon",
+        observances: [
+            .init(offset: .seconds(23087), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(23087), isDaylightSaving: false, abbreviation: "RMT"),
+            .init(offset: .seconds(23400), isDaylightSaving: false, abbreviation: "+0630"),
+            .init(offset: .seconds(32400), isDaylightSaving: false, abbreviation: "+09"),
+        ],
+        instants: [
+            -2840163887, -1577946287, -873268200, -778410000,
+        ],
+        types: [
+            1, 2, 3, 2,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(23400), isDaylightSaving: false, abbreviation: "+0630"), daylight: nil)
+    )
+
+    static let asiaYekaterinburg = TZ.Zone.Record(
+        name: "Asia/Yekaterinburg",
+        observances: [
+            .init(offset: .seconds(14553), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(13505), isDaylightSaving: false, abbreviation: "PMT"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(21600), isDaylightSaving: true, abbreviation: "+06"),
+            .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
+        ],
+        instants: [
+            -1688270553, -1592610305, -1247544000, 354913200, 370720800, 386449200, 402256800, 417985200,
+            433792800, 449607600, 465339600, 481064400, 496789200, 512514000, 528238800, 543963600,
+            559688400, 575413200, 591138000, 606862800, 622587600, 638312400, 654642000, 670366800,
+            686095200, 695772000, 701816400, 717541200, 733266000, 748990800, 764715600, 780440400,
+            796165200, 811890000, 828219600, 846363600, 859669200, 877813200, 891118800, 909262800,
+            922568400, 941317200, 954018000, 972766800, 985467600, 1004216400, 1017522000, 1035666000,
+            1048971600, 1067115600, 1080421200, 1099170000, 1111870800, 1130619600, 1143320400, 1162069200,
+            1174770000, 1193518800, 1206824400, 1224968400, 1238274000, 1256418000, 1269723600, 1288472400,
+            1301173200, 1414267200,
+        ],
+        types: [
+            1, 2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 5,
+            2, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4,
+            3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 6, 4,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"), daylight: nil)
+    )
+
+    static let asiaYerevan = TZ.Zone.Record(
+        name: "Asia/Yerevan",
+        observances: [
+            .init(offset: .seconds(10680), isDaylightSaving: false, abbreviation: "LMT"),
+            .init(offset: .seconds(10800), isDaylightSaving: false, abbreviation: "+03"),
+            .init(offset: .seconds(18000), isDaylightSaving: true, abbreviation: "+05"),
+            .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
+            .init(offset: .seconds(14400), isDaylightSaving: true, abbreviation: "+04"),
+        ],
+        instants: [
+            -1441162680, -405140400, 354916800, 370724400, 386452800, 402260400, 417988800, 433796400,
+            449611200, 465343200, 481068000, 496792800, 512517600, 528242400, 543967200, 559692000,
+            575416800, 591141600, 606866400, 622591200, 638316000, 654645600, 670370400, 686098800,
+            701823600, 717548400, 733273200, 748998000, 764722800, 780447600, 796172400, 811897200,
+            859672800, 877816800, 891122400, 909266400, 922572000, 941320800, 954021600, 972770400,
+            985471200, 1004220000, 1017525600, 1035669600, 1048975200, 1067119200, 1080424800, 1099173600,
+            1111874400, 1130623200, 1143324000, 1162072800, 1174773600, 1193522400, 1206828000, 1224972000,
+            1238277600, 1256421600, 1269727200, 1288476000, 1301176800, 1319925600,
+        ],
+        types: [
+            1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 4, 1,
+            4, 1, 4, 1, 4, 1, 4, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+            2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+        ],
+        recurrence: .init(standard: .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"), daylight: nil)
+    )
+}

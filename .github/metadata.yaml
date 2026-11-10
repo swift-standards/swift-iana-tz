@@ -1,0 +1,11 @@
+# .github/metadata.yaml
+description: "Swift implementation of the IANA Time Zone Database: every zone and link, with exact offsets and daylight saving transitions."
+topics:
+  - standards
+  - iana
+  - tzdata
+  - time-zones
+  - daylight-saving-time
+homepage: "https://swift-institute.org"
+readme:
+  family: E
