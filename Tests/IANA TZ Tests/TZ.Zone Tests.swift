@@ -36,7 +36,7 @@ extension `TZ.Zone Tests`.Test.Unit {
 
     @Test
     func `every zone and link of the release is present`() throws {
-        #expect(TZ.version == "2026f")
+        #expect(TZ.release == "2026f")
         #expect(TZ.Zone.allCases.count == 345)
         #expect(TZ.Link.allCases.count == 253)
         for zone in TZ.Zone.allCases {

@@ -1,6 +1,6 @@
-internal import Time
 internal import Calendar
 public import Calendar_Gregorian
+internal import Time
 
 extension TZ.Recurrence {
     public struct Rule {
@@ -28,6 +28,7 @@ extension TZ.Recurrence.Rule {
             case .last:
                 let last = try Gregorian.Date(year: year, month: month, day: days).weekday.number
                 day = days - (last - target + 7) % 7
+
             default:
                 let first = try Gregorian.Date(year: year, month: month, day: 1).weekday.number
                 day = 1 + (target - first + 7) % 7 + 7 * week.index
@@ -38,8 +39,8 @@ extension TZ.Recurrence.Rule {
         }
     }
 
-    func instant(in year: Int, offset: Time.Zone) -> Time.Instant? {
-        guard let date = date(in: Gregorian.Year(year)) else { return nil }
+    func instant(in year: Gregorian.Year, offset: Time.Zone) -> Time.Instant? {
+        guard let date = date(in: year) else { return nil }
         do throws(Gregorian.Conversion.Error) {
             let midnight = try Gregorian.DateTime(date: date).instant(in: offset)
             do throws(Time.Instant.Error) {

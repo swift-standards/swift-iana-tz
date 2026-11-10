@@ -1,6 +1,6 @@
-public import Time
 internal import Calendar
 internal import Calendar_Gregorian
+public import Time
 
 extension TZ {
     public struct Recurrence {
@@ -17,23 +17,27 @@ extension TZ {
 extension TZ.Recurrence {
     public func observance(at instant: Time.Instant) -> TZ.Observance {
         guard let daylight else { return standard }
-        let year = Gregorian.DateTime(instant).year.rawValue
-        var latest: (instant: Time.Instant, observance: TZ.Observance)?
-        for candidate in (year - 1)...(year + 1) {
-            let changes = [
-                (rule: daylight.start, before: standard, after: daylight.observance),
-                (rule: daylight.end, before: daylight.observance, after: standard),
+        let date = Gregorian.DateTime(instant).date
+        let changes = [-1, 0, 1].compactMap { date.year(shifted: $0) }.flatMap { year in
+            [
+                (at: daylight.start.instant(in: year, offset: standard.offset), after: daylight.observance),
+                (at: daylight.end.instant(in: year, offset: daylight.observance.offset), after: standard),
             ]
-            for change in changes {
-                guard let at = change.rule.instant(in: candidate, offset: change.before.offset), at <= instant else {
-                    continue
-                }
-                if latest.map({ at > $0.instant }) ?? true {
-                    latest = (at, change.after)
-                }
-            }
         }
-        return latest?.observance ?? standard
+        let passed = changes.compactMap { change in
+            change.at.flatMap { at in at <= instant ? (at: at, after: change.after) : nil }
+        }
+        return passed.max { $0.at < $1.at }?.after ?? standard
+    }
+}
+
+extension Gregorian.Date {
+    fileprivate func year(shifted years: Int) -> Gregorian.Year? {
+        do throws(Calendar::Calendar<Gregorian.Date>.Error) {
+            return try adding(years: years).year
+        } catch {
+            return nil
+        }
     }
 }
 

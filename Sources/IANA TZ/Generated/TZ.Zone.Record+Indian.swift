@@ -10,7 +10,7 @@ extension TZ.Zone.Record {
             .init(offset: .seconds(21600), isDaylightSaving: false, abbreviation: "+06"),
         ],
         instants: [
-            -1988167780, 820436400,
+            -1_988_167_780, 820_436_400,
         ],
         types: [
             1, 2,
@@ -26,7 +26,7 @@ extension TZ.Zone.Record {
             .init(offset: .seconds(18000), isDaylightSaving: false, abbreviation: "+05"),
         ],
         instants: [
-            -2840158440, -315636840,
+            -2_840_158_440, -315_636_840,
         ],
         types: [
             1, 2,
@@ -42,7 +42,7 @@ extension TZ.Zone.Record {
             .init(offset: .seconds(14400), isDaylightSaving: false, abbreviation: "+04"),
         ],
         instants: [
-            -1988164200, 403041600, 417034800, 1224972000, 1238274000,
+            -1_988_164_200, 403_041_600, 417_034_800, 1_224_972_000, 1_238_274_000,
         ],
         types: [
             2, 1, 2, 1, 2,

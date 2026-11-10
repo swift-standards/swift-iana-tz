@@ -29,7 +29,6 @@ extension `Gregorian Tests`.Test.Unit {
         let local = try Gregorian.DateTime(year: 2026, month: .november, day: 10, hour: 9, minute: 30)
         #expect(try local.instant(in: .america.newYork).secondsSinceUnixEpoch == 1_794_321_000)
         #expect(try Time.Instant(secondsSinceUnixEpoch: 1_794_321_000).gregorian(in: .america.newYork) == local)
-        #expect(try Gregorian.DateTime(instant: Time.Instant(secondsSinceUnixEpoch: 1_794_321_000), in: .america.newYork) == local)
     }
 }
 
